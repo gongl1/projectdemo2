@@ -11,3 +11,5 @@ SQLAlchemy==1.4.19
 Werkzeug==2.0.1
 numpy
 pandas
+flask-cors
+psycopg2-binary
