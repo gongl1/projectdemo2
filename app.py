@@ -18,7 +18,7 @@ import json
 # engine = create_engine("secret")
 
 amazon = os.getenv("AMAZON")
-# rds_connection_string = f"postgresql+psycopg2://postgres:clayco2022=@localhost/ETL_USPTO"
+
 
 rds_connection_string = amazon
 engine = create_engine(rds_connection_string)
@@ -74,6 +74,7 @@ def uspc_class_all(uspc_class=None):
     # prcp_list = list(prcp)
     print(prcp)
     # return json.dumps({"data": prcp_list} # This is a dictionary
+    prcp = [x[0] for x in prcp]
     return jsonify(prcp)
 
 
