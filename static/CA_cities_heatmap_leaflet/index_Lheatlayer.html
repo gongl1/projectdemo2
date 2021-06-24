@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>SF Crime</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <style>
+      *{
+      font-family: Arial;
+      }
+    </style>
+  </head>
+
+  <body>
+  
+  <!--navigation menu-->
+  <center>
+  <a href="../index.html"><b><h2 style="font-size: 25px; color:rgb(12, 12, 12);">Home </h2></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../applications_distributions_D3_choropleth\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 1: USPTO Patent Applications Distributions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../applications_correlations_D3_bubbles\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 2: USPTO Patent Applications Correlations</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../CA_cities_heatmap_leaflet\index_Lheatlayer.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 3: USPTO Patent Applications Distributions in CA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../uspc_plotly\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 4: Patented Rate and Duration by USPC Class</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="../uspc_attorneys_plotly\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 5: Patented Rate by USPC Class and Its Attorneys<br><br></a>
+  <h4 style="font-size: 25px; color:rgb(12, 12, 12);">The current page is Page 3</h4>
+  </center>
+
+    <div id="map"></div>
+
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config_Lheatlayer.js"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <!-- D3 CDN -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- JS -->
+    <!-- <script type="text/javascript" src="static/js/just-crime_only markers.js"></script> -->
+    <script type="text/javascript" src="static/js/heatmap_Lheatlayer_lg.js"></script>
+
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat_supporting_Lheatlayer.js"></script>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Patented Rate and Duration by USPC Class and Attorneys</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    *{
+    font-family: Arial;
+    }
+  </style>
+</head>
+
+
+<body>
+
+<!--navigation menu-->
+<center>
+<a href="../index.html"><b><h2 style="font-size: 25px; color:rgb(12, 12, 12);">Home </h2></b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../applications_distributions_D3_choropleth\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 1: USPTO Patent Applications Distributions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../applications_correlations_D3_bubbles\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 2: USPTO Patent Applications Correlations</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../CA_cities_heatmap_leaflet\index_Lheatlayer.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 3: USPTO Patent Applications Distributions in CA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../uspc_plotly\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 4: Patented Rate and Duration by USPC Class</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="../uspc_attorneys_plotly\index.html" style="font-size: 16px; color:rgb(12, 12, 12);">Page 5: Patented Rate by USPC Class and Its Attorneys<br><br></a>
+<h4 style="font-size: 25px; color:rgb(12, 12, 12);">The current page is Page 5</h4>
+</center>
+
+  <div class="container" style="width: 90vw">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center"
+        style="background-image: url(https://media1.tenor.com/images/e177025a01472601c8b2063d6490db18/tenor.gif?itemid=16825989); background-repeat: no-repeat; background-size: auto; background-position: center; height: 900px;">
+        <h1 style="color:rgb(12, 12, 12);">Patented Rate by USPC Class and Its Attorneys Dashboard</h1>
+        <p style="color:rgb(12, 12, 12);">Use the interactive charts below to search for a uspc class and its attorneys</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>USPC CLASS:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+
+
+          <h5>Attorney:</h5>
+          <select id="selDataset_att" onchange="optionChanged_att(this.value)"></select>
+
+
+
+
+
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="background-color:rgb(230, 230, 200); color: rgb(10, 10, 10)">
+            <h3 class="panel-title">USPC Class and Attorney Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bar"></div>
+      </div>
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <br><br>
+
+  <div class="container" style="width: 90vw">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center"
+        style="background-image: url(https://img.alicdn.com/bao/uploaded/i3/701919434/TB2fDAKw1OSBuNjy0FdXXbDnVXa_!!701919434.jpg_500x500q90.jpg); background-repeat: no-repeat; background-size: auto; background-position: center; height: 900px;">
+        <!-- <h1 style="color:rgb(233, 233, 245);">USPC_CLASS Dashboard</h1> -->
+        <!-- <p style="color:rgb(172, 172, 182);">Use the interactive charts below to explore the dataset</p> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="./static/js/app.js"></script> -->
+  <script src="plots_lg.js"></script>
+  <script src="bonus.js"></script>
+  <!-- <script src="samples.json"></script> -->
+
+</body>
+
+</html>
