@@ -1,5 +1,6 @@
 import numpy as np
 import datetime as dt
+import os
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
@@ -16,8 +17,10 @@ import json
 #################################################
 # engine = create_engine("secret")
 
+amazon = os.getenv("AMAZON")
+# rds_connection_string = f"postgresql+psycopg2://postgres:clayco2022=@localhost/ETL_USPTO"
 
-rds_connection_string = f"postgresql+psycopg2://postgres:clayco2022=@localhost/ETL_USPTO"
+rds_connection_string = amazon
 engine = create_engine(rds_connection_string)
 
 
