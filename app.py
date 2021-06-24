@@ -74,7 +74,7 @@ def uspc_class_all(uspc_class=None):
     # prcp_list = list(prcp)
     print(prcp)
     # return json.dumps({"data": prcp_list} # This is a dictionary
-    prcp = [x[0] for x in prcp]
+    prcp = [[x[0]] for x in prcp]
     return jsonify(prcp)
 
 
